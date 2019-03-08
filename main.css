@@ -1,6 +1,16 @@
 body {
     background-color: oldlace;
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
+.fullPage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 .fullPage {
     max-width: 90%;
     width: 1000px;
@@ -31,3 +41,18 @@ footer li {
 footer ul {
     justify-content: space-around;
 } */
+
+.project-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding-top: 30px;
+}
+
+.project {
+    border: 1px solid black;
+    margin: 0px 15px 30px 15px;
+    padding: 15px;
+}
