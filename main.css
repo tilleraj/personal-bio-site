@@ -1,3 +1,33 @@
 body {
     background-color: oldlace;
 }
+.fullPage {
+    max-width: 90%;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 3px 3px 7px -2px;
+}
+footer {
+    max-width: 90%;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 3px 3px 7px -2px;
+}
+/* 
+footer li {
+    display: flex;
+}
+
+footer ul {
+    justify-content: space-around;
+} */
