@@ -54,6 +54,7 @@ const projects = [
 
 const createProjectCards = () => {
     let domString = '';
+    domString += `<div style="display: flex">`;
     for (let i = 0; i < projects.length; i++) {
         if (projects[i].available === true) {
             domString += `<div class="project">`;
@@ -65,16 +66,30 @@ const createProjectCards = () => {
             domString += `</div>`;
         }
     }
+    domString += `</div>`;
     printToDom('projectsPage', domString);
 }
 
 const navLinkClick = (e) => {
     const navLinkId = e.target.id;
-    let link = document.getElementById(navLinkId);
-    if (link.style.fontWeight === 'bold') {
-        link.style.fontWeight = 'normal';
-    } else {
-        link.style.fontWeight = 'bold';
+    if (navLinkId === 'navToBio') {
+        if (document.getElementById('bioPage').style.display === 'none') {
+            document.getElementById('bioPage').style.display = 'block';
+            document.getElementById('technologiesPage').style.display = 'none';
+            document.getElementById('projectsPage').style.display = 'none';
+        }
+    } else if (navLinkId === 'navToTechnologies') {
+        if (document.getElementById('technologiesPage').style.display === 'none') {
+            document.getElementById('bioPage').style.display = 'none';
+            document.getElementById('technologiesPage').style.display = 'block';
+            document.getElementById('projectsPage').style.display = 'none';
+        }
+    } else if (navLinkId === 'navToProjects') {
+        if (document.getElementById('projectsPage').style.display === 'none') {
+            document.getElementById('bioPage').style.display = 'none';
+            document.getElementById('technologiesPage').style.display = 'none';
+            document.getElementById('projectsPage').style.display = 'block';
+        }
     }
 }
 
