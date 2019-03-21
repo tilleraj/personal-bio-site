@@ -1,5 +1,3 @@
-console.log('setup is working');
-
 // {
 //     title: "Cool Project", 
 //     screenshot: "https://via.placeholder.com/250x250", 
@@ -70,12 +68,27 @@ const createProjectCards = () => {
     printToDom('projectsPage', domString);
 }
 
+const navLinkClick = (e) => {
+    const navLinkId = e.target.id;
+    let link = document.getElementById(navLinkId);
+    if (link.style.fontWeight === 'bold') {
+        link.style.fontWeight = 'normal';
+    } else {
+        link.style.fontWeight = 'bold';
+    }
+}
 
+const navEvents = () => {
+    document.getElementById('navToBio').addEventListener('click', navLinkClick);
+    document.getElementById('navToTechnologies').addEventListener('click', navLinkClick);
+    document.getElementById('navToProjects').addEventListener('click', navLinkClick);
+}
 
 
 
 
 const init = () => {
+    navEvents();
     createProjectCards();
 };
 
