@@ -1,0 +1,39 @@
+/* your styles go here */
+
+.logo {
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.logo .logo-img {
+  /* max-width: 50px; */
+}
+
+.logo .logo-text {
+  /* color: yellow; */
+}
+
+#contact .contact .icon {
+  font-size: 3rem;
+  margin: 0 1rem;
+}
+
+#navbarcollapse .contact .icon a {
+  color: #777;
+  /* font-size: 2em; */
+  margin: 0 0.25em;
+}
+
+footer .contact .icon a {
+  color: #eee;
+  font-size: 2em;
+  margin: 0 0.5em;
+}
+
+footer.main-footer p {
+  margin: auto;
+}
+footer.main-footer .template-credit a {
+  color: #aaa;
+}
