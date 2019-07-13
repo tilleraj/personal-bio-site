@@ -1,5 +1,9 @@
 /* your styles go here */
 
+.reference {
+  height: 75%;
+}
+
 .logo {
   align-items: center;
   text-align: center;
