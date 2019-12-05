@@ -23,6 +23,10 @@
   margin: 0 1rem;
 }
 
+.contact-location {
+  color:var(--main-teal);
+}
+
 #navbarcollapse .contact .icon a {
   color: #777;
   /* font-size: 2em; */
